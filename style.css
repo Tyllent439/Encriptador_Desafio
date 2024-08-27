@@ -1,0 +1,250 @@
+
+*{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+}
+
+.area-texto{
+    border: none;
+    color: #600749;
+    margin-top: 90px;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder{
+    color:#600749;
+}
+
+.area-texto:focus{
+    outline: none;
+}
+
+.informacion{
+    color: #495057;
+    font-size: 16px;
+    margin-top: 150px;
+}
+
+.mensaje{
+    resize: none;
+    background: #f9b4df;
+    background-image: url("/Imagenes/Muñeco.png");   
+    background-position: center;
+    background-repeat: no-repeat;   
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 98px;
+    padding: 20px;
+    position: absolute;
+    height: 850px;
+
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 16px;
+}
+
+.boton-encriptar {
+    font-size: 16px;
+    background-color: #600749;
+    border: 1px solid ;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.boton-desencriptar{
+    font-size: 16px;
+    background: #af84a0;
+    border: 1px solid #600749;
+    border-radius: 24px;
+    color: black;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.boton-copiar{
+    font-size: 16px;
+    border: 1px solid #600749;
+    border-radius: 24px;
+    color: #600749;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 146px;
+    margin-top: 780px;
+    position: absolute;
+    width: 336px;
+}
+
+.texto-debajo-imagen {
+    position: absolute; /* Posicionamiento absoluto para posicionar debajo del textarea */
+    top: 715px; /* Ajusta este valor según sea necesario para posicionar debajo de la imagen */
+    left: 1420px;
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Tamaño de fuente del texto */
+    color: black; /* Color del texto */
+    text-align: center;
+    width: 336px;
+    background: none;
+    font-weight: bold;
+}
+
+.texto-debajo-imagen1 {
+    position: absolute; /* Posicionamiento absoluto para posicionar debajo del textarea */
+    top: 755px; /* Ajusta este valor según sea necesario para posicionar debajo de la imagen */
+    left: 1260px;
+    
+    font-size: 16px; /* Tamaño de fuente del texto */
+    color: black; /* Color del texto */
+    text-align: center;
+    width: 336px; /* Ajusta el ancho según sea necesario */
+    background: none;
+}
+
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    .body{
+        width: 768px;
+        height: 1174px;
+    }
+
+    .logo{
+     width: 15%;
+     margin-top: 40px;
+    } 
+    main{
+     display: block;
+     margin: 0px 30px;
+    }
+    .entrada-texto{
+     margin-top: 60px;
+     width: 100%;
+     height: 700px;
+    }
+    .botones{
+     margin-top: 0px;
+    }
+    .area-texto{
+     margin: 40px 0px;
+     width: 655px;
+     height: 400px;
+    }
+
+    .boton-copiar{
+     margin-top: 240px;
+     margin-left: 200px;
+    }
+
+    .mensaje{
+        margin-top: 50px;
+        background-image:none;
+        width: 668px;
+        height: 133px;
+        margin-left: 0px;
+    }
+
+    .texto-debajo-imagen {
+        top: 1055px;
+        left: 390px;
+        width: 688px;
+    }
+    
+    .texto-debajo-imagen1 {
+        top: 1075px;  
+        left: 40px;
+        width: 688px; 
+    }
+ }
+
+ /* Tablet */
+@media screen and (max-width: 375px) {
+
+    .body{
+        width: 375px;
+        height: 933px;
+    }
+
+    .logo{
+     width: 15%;
+     margin-top: 40px;
+    } 
+    main{
+     display: block;
+     margin: 0px 30px;
+    }
+    .entrada-texto{
+     margin-top: 60px;
+     width: 100%;
+     height: 10px;
+    }
+    .botones{
+     margin-top: 0px;
+     margin-left: 40px;
+    }
+    .area-texto{
+     margin: 100px 0px;
+     width: 695px;
+     height: 900px;
+    }
+
+    .boton-copiar{
+     margin-top: 240px;
+     margin-left: 200px;
+    }
+
+    .mensaje{
+        margin-top: 50px;
+        background-image:none;
+        width: 647px;
+        height: 133px;
+        margin-left: 40px;
+    }
+
+    .texto-debajo-imagen {
+        top: 1055px;
+        left: 390px;
+        width: 688px;
+    }
+    
+    .texto-debajo-imagen1 {
+        top: 1075px;  
+        left: 40px;
+        width: 688px; 
+    }
+ }
